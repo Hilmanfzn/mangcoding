@@ -48,6 +48,23 @@
         * {
             font-family: 'Plus Jakarta Sans', sans-serif;
         }
+
+        .navbar {
+            
+        }
+
+        .menu-toggle .class-y{
+           display: none;
+        }
+        /* .Active {
+            display: none;
+        } */
+        .Active .class-x{
+            display: none;
+        }
+        .Active .class-y{
+            display: flex;
+        }
     </style>
 </head>
 
@@ -59,17 +76,23 @@
                 <div class="flex">
                     <img class="fond-bold " src="./assets/svg/logo.svg" alt="">
                 </div>
-                <a href="#" class="text-[14px] ml-[80px] lg:block hidden py-[32px] px-2 text-grey">Home</a>
-                <a href="#" class="text-[14px] py-[32px] lg:block hidden  px-2 text-sky font-bold">Abouts</a>
-                <a href="#" class="text-[14px] py-[32px] lg:block hidden  px-2 text-greydark">Services</a>
-                <a href="#" class="text-[14px] py-[32px] lg:block hidden  px-2 text-greydark">Our Work</a>
-                <a href="#" class="text-[14px] py-[32px] lg:block hidden  px-2 text-greydark">Blog</a>
-                <a href="#" class="text-[14px] py-[32px] lg:block hidden  px-2 text-greydark">course</a>
-                <a href="#" class="text-[14px] py-[32px] lg:block hidden  px-2 text-greydark">Resource</a>
-                <a href="#" class="text-[14px] py-[32px] lg:block hidden  px-2 text-greydark">Contact</a>
+                <div class="flex justify-center" id="navbar">
+                    <a href="#" class="text-[14px] ml-[80px] lg:block hidden py-[32px] px-2 text-grey">Home</a>
+                    <a href="#" class="text-[14px] py-[32px] lg:block hidden  px-2 text-sky font-bold">Abouts</a>
+                    <a href="#" class="text-[14px] py-[32px] lg:block hidden  px-2 text-greydark">Services</a>
+                    <a href="#" class="text-[14px] py-[32px] lg:block hidden  px-2 text-greydark">Our Work</a>
+                    <a href="#" class="text-[14px] py-[32px] lg:block hidden  px-2 text-greydark">Blog</a>
+                    <a href="#" class="text-[14px] py-[32px] lg:block hidden  px-2 text-greydark">course</a>
+                    <a href="#" class="text-[14px] py-[32px] lg:block hidden  px-2 text-greydark">Resource</a>
+                    <a href="#" class="text-[14px] py-[32px] lg:block hidden  px-2 text-greydark">Contact</a>
+                </div>
             </nav>
             <div class="flex gap-6">
                 <img class="relative" src="./assets/svg/search.svg" alt="">
+                <button class="menu-toggle" onclick="toggleMenu()">
+                    <p class="class-x">X</p>
+                    <p class="class-y">Y</p>
+                </button>
                 <img class="lg:hidden block" src="./assets/svg/menu.svg" alt="">
                 <a class="py-[16px] px-[32px] hidden sm:hidden lg:block xl:block text-white font-semibold bg-blue rounded-[38px]" href="">Get Start</a>
             </div>
@@ -328,6 +351,7 @@
     </section>
 
 
+    <script src="./assets/js/app.js"></script>
 </body>
 
 </html>
