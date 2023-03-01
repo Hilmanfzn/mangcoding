@@ -49,20 +49,20 @@
             font-family: 'Plus Jakarta Sans', sans-serif;
         }
 
-        .navbar {
-            
+        .navbar {}
+
+        .menu-toggle .class-y {
+            display: none;
         }
 
-        .menu-toggle .class-y{
-           display: none;
-        }
         /* .Active {
             display: none;
         } */
-        .Active .class-x{
+        .Active .class-x {
             display: none;
         }
-        .Active .class-y{
+
+        .Active .class-y {
             display: flex;
         }
     </style>
@@ -75,36 +75,61 @@
             <nav class="flex justify-center">
                 <div class="flex">
                     <a href="https://mangcoding.com/" target="_blank">
-                        <img class="fond-bold " src="./assets/svg/logo.svg" alt="">
+                        <img class="fond-bold mt-[24px]" src="./assets/svg/logo.svg" alt="">
                     </a>
-             
+
                 </div>
                 <div class="flex justify-center" id="navbar">
-                    <a href="#" class="text-[14px] ml-[80px] lg:block hidden py-[32px] px-2 text-grey">Home</a>
-                    <a href="#" class="text-[14px] py-[32px] lg:block hidden  px-2 text-sky font-bold">Abouts</a>
-                    <a href="#" class="text-[14px] py-[32px] lg:block hidden  px-2 text-greydark">Services</a>
-                    <a href="#" class="text-[14px] py-[32px] lg:block hidden  px-2 text-greydark">Our Work</a>
-                    <a href="#" class="text-[14px] py-[32px] lg:block hidden  px-2 text-greydark">Blog</a>
-                    <a href="#" class="text-[14px] py-[32px] lg:block hidden  px-2 text-greydark">course</a>
-                    <a href="#" class="text-[14px] py-[32px] lg:block hidden  px-2 text-greydark">Resource</a>
-                    <a href="#" class="text-[14px] py-[32px] lg:block hidden  px-2 text-greydark">Contact</a>
+                    <ul class="md:flex md:items-center gap-[24px] z-[-1] md:z-auto ">
+                        <li class="">
+                            <a href="#" class="text-[14px] ml-[80px] lg:block hidden py-[32px] px-2 text-grey">Home</a>
+                        </li>
+                        <li class="">
+                            <a href="#"
+                                class="text-[14px] py-[32px] lg:block hidden  px-2 text-sky font-bold">Abouts</a>
+                        </li>
+                        <li class="">
+                            <a href="#" class="text-[14px] py-[32px] lg:block hidden  px-2 text-greydark">Services</a>
+                        </li>
+                        <li class="">
+                            <a href="#" class="text-[14px] py-[32px] lg:block hidden  px-2 text-greydark">Our Work</a>
+                        </li>
+                        <li class="">
+                            <a href="#" class="text-[14px] py-[32px] lg:block hidden  px-2 text-greydark">Blog</a>
+                        </li>
+                        <li class="">
+                            <a href="#" class="text-[14px] py-[32px] lg:block hidden  px-2 text-greydark">course</a>
+                        </li>
+                        <li class="">
+                            <a href="#" class="text-[14px] py-[32px] lg:block hidden  px-2 text-greydark">Resource</a>
+                        </li>
+                        <li class="">
+                            <a href="#" class="text-[14px] py-[32px] lg:block hidden  px-2 text-greydark">Contact</a>
+                        </li>
+                    </ul>
+
+
                 </div>
             </nav>
             <div class="flex gap-6">
                 <img class="relative" src="./assets/svg/search.svg" alt="">
                 <button class="menu-toggle lg:hidden block" onclick="toggleMenu()">
                     <p class="class-x"><img src="./assets/svg/menu.svg" alt=""></p>
-                    <p class="class-y"><img src="./assets/svg/menu.svg" alt=""></p>
+                    <p class="class-y"><img class="" src="./assets/svg/X.svg" alt=""></p>
                 </button>
-                <a class="py-[16px] px-[32px] hidden sm:hidden lg:block xl:block text-white font-semibold bg-blue rounded-[38px]" href="">Get Start</a>
+                <a class="py-[16px] px-[32px] hidden sm:hidden lg:block xl:block text-white font-semibold bg-blue rounded-[38px]"
+                    href="https://mangcoding.com/" target="_blank">Get Start</a>
             </div>
         </div>
         <div class="container pb-[80px] pt-[80px]">
             <div class="flex flex-col md:flex-row gap-10">
                 <div class="flex flex-col w-1/2">
-                    <h1 class="w-[300px] md:w-[400px] lg:w-[500px] min-[375px] text-[32px] sm:text-[24px] md:text-[32px] lg:text-[40px] font-bold"><span class="text-blue"> Find Out About
+                    <h1
+                        class="w-[300px] md:w-[400px] lg:w-[500px] min-[375px] text-[32px] sm:text-[24px] md:text-[32px] lg:text-[40px] font-bold">
+                        <span class="text-blue"> Find Out About
                             The</span><span class="text-bluedark"> Mangcoding Team</span></h1>
-                    <P class="text-greydark w-[300px] lg:w-[500px] mt-[24px] font-[14px] leading-7">Mangcoding is a team of
+                    <P class="text-greydark w-[300px] lg:w-[500px] mt-[24px] font-[14px] leading-7">Mangcoding is a team
+                        of
                         developers that will help build a website for your company, helping to market in a modern way
                     </P>
                 </div>
@@ -134,7 +159,8 @@
             <div class="flex gap-[47px]">
                 <div>
                     <h2 class="text-[24px] md:text-[30px] lg:text-[32px] mt-[110px] font-bold">Mission And History</h2>
-                    <p class="text-[14px] text-greydark w-[300px] lg:w-[500px] mt-[16px]"> History and the beginning of the formation
+                    <p class="text-[14px] text-greydark w-[300px] lg:w-[500px] mt-[16px]"> History and the beginning of
+                        the formation
                         of the
                         mangcoding team </p>
                 </div>
@@ -145,11 +171,13 @@
             <div class="flex flex-col md:flex-row mt-[35px] gap-[51px]">
                 <div>
                     <div>
-                        <div class="rounded-[12px] w-max border-transparent py-[12px] px-[12px]" style="box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.03);">
+                        <div class="rounded-[12px] w-max border-transparent py-[12px] px-[12px]"
+                            style="box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.03);">
                             <img src="./assets/svg/tenda.svg" alt="">
                             <div class="">
                                 <h3 class="text-[16px] lg:text-[24px] font-bold mt-[16px]">Mission</h3>
-                                <p class="text-greydark text-[14px] w-[300px] lg:w-[500px] mt-[16px] mb-[63.53px]">Our mission is to
+                                <p class="text-greydark text-[14px] w-[300px] lg:w-[500px] mt-[16px] mb-[63.53px]">Our
+                                    mission is to
                                     make it as easy as
                                     possible for
                                     everyone in a company to monitor, analyze, and improve performance in one spot on
@@ -159,11 +187,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="rounded-[12px] w-max border-transparent py-[12px] px-[12px]" style="box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.03);">
+                <div class="rounded-[12px] w-max border-transparent py-[12px] px-[12px]"
+                    style="box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.03);">
                     <img src="./assets/svg/note.svg" alt="">
                     <div class="">
                         <h3 class="text-[16px] md:text-[24px] font-bold mt-[16px] ">History</h3>
-                        <p class="text-greydark text-[14px] mt-[16px] w-[300px] lg:w-[520px]">Experiencing in Web Development more
+                        <p class="text-greydark text-[14px] mt-[16px] w-[300px] lg:w-[520px]">Experiencing in Web
+                            Development more
                             than 10
                             Years, Nugraha
                             as a Project Manager in Mangcoding always get offer to work with company to build and manage
@@ -181,14 +211,16 @@
 
     <section class="text-center">
         <div class="">
-            <h2 class="text-[24px] md:text-[30px] lg:text-[32px] mt-[168px] font-bold">Member Of <span class="text-green">Mangcoding Team</span>
+            <h2 class="text-[24px] md:text-[30px] lg:text-[32px] mt-[168px] font-bold">Member Of <span
+                    class="text-green">Mangcoding Team</span>
             </h2>
             <p class="text-[14px] text-greydark mt-[16px]"> Below are the members of the mangcoding team
             </p>
         </div>
     </section>
 
-    <section class="container flex justify-center lg:justify-center text-center flex flex-wrap lg:flex-nowrap min-[375px]:gap-[14px]">
+    <section
+        class="container flex justify-center lg:justify-center text-center flex flex-wrap lg:flex-nowrap min-[375px]:gap-[14px]">
         <div class="w-1/2 md:w-1/4  lg:w-1/6">
             <div class="mt-[73px]">
                 <img class="mx-auto" src="./assets/images/nugraha.png" alt="">
@@ -196,7 +228,7 @@
                     <a href="https://www.instagram.com/mangcoding.official/" target="_blank">
                         <img src="./assets/svg/ig2.svg" alt="">
                     </a>
-                    <a href="https://github.com/mangcoding?tab=repositories" target="_blank"> 
+                    <a href="https://github.com/mangcoding?tab=repositories" target="_blank">
                         <img src="./assets/svg/git.svg" alt="">
                     </a>
                     <a href="https://www.youtube.com/channel/UCrekFxLeW-TpcoWD4nVitvQ" target="_blank">
@@ -204,7 +236,7 @@
                     </a>
                     <a href="https://www.linkedin.com/company/mangcoding" target="_blank">
                         <img src="./assets/svg/in2.svg" alt="">
-                    </a>         
+                    </a>
                 </div>
                 <h2 class="text-center mt-[16px] text-[16px] font-bold">Nugraha</h2>
                 <p class="text-[14px] text-greydark mt-[8px]">Founder & Project Manager</p>
@@ -217,19 +249,19 @@
                     <a href="https://www.instagram.com/mangcoding.official/" target="_blank">
                         <img src="./assets/svg/ig2.svg" alt="">
                     </a>
-                
+
                     <a href="https://github.com/mangcoding?tab=repositories" target="_blank">
                         <img src="./assets/svg/git.svg" alt="">
                     </a>
-                     
+
                     <a href="https://www.youtube.com/channel/UCrekFxLeW-TpcoWD4nVitvQ" target="_blank">
                         <img src="./assets/svg/yt2.svg" alt="">
                     </a>
-                  
+
                     <a href="https://www.linkedin.com/company/mangcoding" target="_blank">
                         <img src="./assets/svg/in2.svg" alt="">
                     </a>
-                    
+
                 </div>
                 <h2 class="mt-[16px] text-[16px] font-bold">Purwa Adi Wicaksana</h2>
                 <p class="text-[14px] text-greydark mt-[8px]">UI/UX Designer</p>
@@ -242,17 +274,17 @@
                     <a href="https://www.instagram.com/mangcoding.official/" target="_blank">
                         <img src="./assets/svg/ig2.svg" alt="">
                     </a>
-                    
+
                     <a href="https://github.com/mangcoding?tab=repositories" target="_blank">
                         <img src="./assets/svg/git.svg" alt="">
                     </a>
-                    <a href="https://www.youtube.com/channel/UCrekFxLeW-TpcoWD4nVitvQ" target="_blank"> 
-                        <img src="./assets/svg/yt2.svg" alt="">  
+                    <a href="https://www.youtube.com/channel/UCrekFxLeW-TpcoWD4nVitvQ" target="_blank">
+                        <img src="./assets/svg/yt2.svg" alt="">
                     </a>
-                    <a href="https://www.linkedin.com/company/mangcoding" target="_blank"> 
+                    <a href="https://www.linkedin.com/company/mangcoding" target="_blank">
                         <img src="./assets/svg/in2.svg" alt="">
                     </a>
-               
+
                 </div>
                 <h2 class="mt-[16px] text-[16px] font-bold">Ardy CH Fahmi</h2>
                 <p class="text-[14px] text-greydark mt-[8px]">Back-End Development</p>
@@ -265,7 +297,7 @@
                     <a href="https://www.instagram.com/mangcoding.official/" target="_blank">
                         <img src="./assets/svg/ig2.svg" alt="">
                     </a>
-                  
+
                     <a href="https://github.com/mangcoding?tab=repositories" target="_blank">
                         <img src="./assets/svg/git.svg" alt="">
                     </a>
@@ -291,7 +323,7 @@
                         <img src="./assets/svg/git.svg" alt="">
                     </a>
                     <a href="https://www.youtube.com/channel/UCrekFxLeW-TpcoWD4nVitvQ" target="_blank">
-                        <img src="./assets/svg/yt2.svg" alt=""> 
+                        <img src="./assets/svg/yt2.svg" alt="">
                     </a>
                     <a href="https://www.linkedin.com/company/mangcoding" target="_blank">
                         <img src="./assets/svg/in2.svg" alt="">
@@ -378,10 +410,10 @@
                     </div>
                     <div class="mt-[25px]">
                         <h5 class="font-bold text-white">Contact</h5>
-                        <ul class="leading-10">
-                            <li class="text-[#DDDDDD] flex gap-6 text-[14px] mt-[24px]">
+                        <div class="leading-10">
+                            <a href="mailto:hello@mangcoding.com" class="text-[#DDDDDD] flex gap-6 text-[14px] mt-[24px]">
                                 <img class="" src="./assets/svg/email.svg" alt=""> hello@mangcoding.com
-                            </li>
+                            </a>
                             <li class="text-[#DDDDDD] gap-6 flex text-[14px]">
                                 <img class="" src="./assets/svg/call.svg" alt=""> 0266-6532078
                             </li>
@@ -392,14 +424,15 @@
                                 <img class="" src="./assets/svg/gps.svg" alt=""> PT Anugrah Kreasi Digital,
                                 Karang Tengah, Cibadak-Sukabumi
                             </li>
-                        </ul>
+                        </div>
 
                     </div>
                 </div>
             </div>
         </div>
         <div class="container">
-            <div class="flex mt-[24px] lg:mt-[24px] justify-end lg:flex lg:justify-end flex justify-center min-[375px]:flex min-[375px]:justify-center gap-5">
+            <div
+                class="flex mt-[24px] lg:mt-[24px] justify-end lg:flex lg:justify-end flex justify-center min-[375px]:flex min-[375px]:justify-center gap-5">
                 <a href="https://www.instagram.com/mangcoding.official/" target="_blank">
                     <img src="./assets/svg/ig.svg" alt="">
                 </a>
@@ -413,13 +446,14 @@
                     <img src="./assets/svg/in.svg" alt="">
                 </a>
             </div>
-            <div class="container ml-[80px] lg:ml-[80px] ml-0 min-[375px]:ml-0 flex justify-end lg:flex lg:justify-end flex justify-center min-[375px]:flex min-[375px]:justify-center">
+            <div
+                class="container ml-[80px] lg:ml-[80px] ml-0 min-[375px]:ml-0 flex justify-end lg:flex lg:justify-end flex justify-center min-[375px]:flex min-[375px]:justify-center">
                 <div class="">
                     <p class="text-[14px] mt-[24px] lg:mt-[24px] text-white">© 2022 Mangcoding. All rights reserved.</p>
                 </div>
             </div>
         </div>
-      
+
 
     </section>
 
