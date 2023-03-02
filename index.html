@@ -65,13 +65,73 @@
         .Active .class-y {
             display: flex;
         }
+
+        .menu-show{
+            display: none;
+        }
+
+        .menu-show.show {
+            display: flex !important;
+            flex-direction: column;
+            justify-content: space-between;
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background-color: white;
+            padding-top: 100px;
+            height: 100vh;
+            padding-bottom: 40px;
+        }
     </style>
 </head>
 
 <body>
 
     <header class="bg-bluerain">
-        <div class="container flex items-center justify-between bg-bluerain">
+        <div class="menu-show">
+            <ul class="text-center container ">
+                <li class="">
+                    <a href="#" class=" leading-loose font-bold text-[14px] text-greydark">Home</a>
+                </li>
+                <li class="">
+                    <a href="#" class=" leading-loose font-bold text-[14px]  text-greydark">Abouts</a>
+                </li>
+                <li class="">
+                    <a href="#" class=" leading-loose font-bold text-[14px]  text-greydark">Services</a>
+                </li>
+                <li class="">
+                    <a href="#" class=" leading-loose font-bold text-[14px]   text-greydark">Our Work</a>
+                </li>
+                <li class="">
+                    <a href="#" class=" leading-loose font-bold text-[14px]   text-greydark">Blog</a>
+                </li>
+                <li class="">
+                    <a href="#" class=" leading-loose font-bold text-[14px]  text-greydark">course</a>
+                </li>
+                <li class="">
+                    <a href="#" class=" leading-loose font-bold text-[14px]   text-greydark">Resource</a>
+                </li>
+                <li class="">
+                    <a href="#" class=" leading-loose font-bold text-[14px]  text-greydark">Contact</a>
+                </li>
+            </ul>
+            <div class="text-center flex justify-center gap-6">
+                <a href="https://www.instagram.com/mangcoding.official/" target="_blank">
+                    <img src="./assets/svg/ig2.svg" alt="">
+                </a>
+                <a href="https://github.com/mangcoding?tab=repositories" target="_blank">
+                    <img src="./assets/svg/git.svg" alt="">
+                </a>
+                <a href="https://www.youtube.com/channel/UCrekFxLeW-TpcoWD4nVitvQ" target="_blank">
+                    <img src="./assets/svg/yt2.svg" alt="">
+                </a>
+                <a href="https://www.linkedin.com/company/mangcoding" target="_blank">
+                    <img src="./assets/svg/in2.svg" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="container relative z-50 flex items-center justify-between bg-transparent">
             <nav class="flex justify-center">
                 <div class="flex">
                     <a href="https://mangcoding.com/" target="_blank">
@@ -107,8 +167,6 @@
                             <a href="#" class="text-[14px] py-[32px] lg:block hidden  px-2 text-greydark">Contact</a>
                         </li>
                     </ul>
-
-
                 </div>
             </nav>
             <div class="flex gap-6">
@@ -274,7 +332,6 @@
                     <a href="https://www.instagram.com/mangcoding.official/" target="_blank">
                         <img src="./assets/svg/ig2.svg" alt="">
                     </a>
-
                     <a href="https://github.com/mangcoding?tab=repositories" target="_blank">
                         <img src="./assets/svg/git.svg" alt="">
                     </a>
@@ -284,7 +341,6 @@
                     <a href="https://www.linkedin.com/company/mangcoding" target="_blank">
                         <img src="./assets/svg/in2.svg" alt="">
                     </a>
-
                 </div>
                 <h2 class="mt-[16px] text-[16px] font-bold">Ardy CH Fahmi</h2>
                 <p class="text-[14px] text-greydark mt-[8px]">Back-End Development</p>
